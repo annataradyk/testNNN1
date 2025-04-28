@@ -9,10 +9,10 @@
 
     <style>
       body {
-        background-color: purple;
-        color: white;
-        text-align: center;
-        font-family: Arial, sans-serif;
+        background-color: purple; /* Зміна фону на фіолетовий */
+        color: white; /* Щоб текст був краще видимим */
+        text-align: center; /* Вирівнювання тексту по центру */
+        font-family: Arial, sans-serif; /* Красивіший шрифт */
       }
       button {
         padding: 10px 20px;
@@ -31,28 +31,16 @@
         margin-top: 20px;
         font-size: 18px;
       }
-      #my-photo {
-        margin-top: 20px;
-        width: 200px; /* або інший розмір за бажанням */
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-      }
     </style>
 
   </head>
   <body>
     <h1>Програма розпізнавання 3 жестів</h1>
-
-    <!-- Додаємо фото -->
-    <img id="my-photo" src="photo_2025-04-28_11-07-49.jpg" alt="Моє фото" />
-
-    <br />
-
     <button type="button" onclick="init()">Запустити</button>
     <div id="label-container"></div>
 
     <script type="text/javascript">
-      const URL = "./";
+      const URL = "./"; // або вкажи конкретний шлях до моделі, якщо вона в підпапці
 
       let model, webcam, labelContainer, maxPredictions;
 
