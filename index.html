@@ -5,8 +5,34 @@
     <title>Teachable Machine</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.20.0/dist/tf.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+
+    <style>
+      body {
+        background-color: purple; /* Зміна фону на фіолетовий */
+        color: white; /* Щоб текст був краще видимим */
+        text-align: center; /* Вирівнювання тексту по центру */
+        font-family: Arial, sans-serif; /* Красивіший шрифт */
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        background-color: white;
+        color: purple;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      button:hover {
+        background-color: #eee;
+      }
+      #label-container {
+        margin-top: 20px;
+        font-size: 18px;
+      }
+    </style>
+
   </head>
   <body>
     <h1>Програма розпізнавання 3 жестів</h1>
@@ -54,3 +80,4 @@
     </script>
   </body>
 </html>
+
